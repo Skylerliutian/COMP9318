@@ -1,0 +1,5 @@
+Location	Time	Item	Sum(Quantity)
+Sydney	2005	PS2	1400
+Sydney	2006	PS2	1500
+Sydney	2006	Wii	500
+Melbourne	2005	XBox 360	1700 

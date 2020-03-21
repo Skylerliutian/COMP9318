@@ -31,6 +31,7 @@ def buc_rec_general(df, result, prefix=[]):
     elif rows == 1:
         s_tuple = list(df.iloc[0])
         tuples = buc_single(pre_cp, s_tuple, dims)
+        # tuples 是[[],[]....]形式
         result += tuples
     else:
         dim0_vals = set(helper.project_data(df, 0).values)
@@ -51,6 +52,6 @@ def buc_rec_optimized(df):# do not change the heading of the function
     final_result = pd.DataFrame(result, columns=column_name)
     return final_result
 
-input_data = read_data('./asset/g_.txt')
+input_data = read_data('./asset/i_.txt')
 output = buc_rec_optimized(input_data)
 print(output)
